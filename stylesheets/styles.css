@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:25px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -166,7 +166,7 @@ section {
 }
 
 small {
-  font-size:11px;
+  font-size:20px;
 }
 
 hr {
@@ -234,6 +234,27 @@ footer {
   pre, code {
     word-wrap:normal;
   }
+}
+
+.roundrectImage {
+border-radius: 25px;
+}
+
+#content::after {
+  display:block;
+  content:"";
+  clear:both;
+}
+
+
+.projects{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.repo{
+  display: block;
+  padding-top: 20px;
 }
 
 @media print, screen and (max-width: 480px) {
