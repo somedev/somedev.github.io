@@ -212,7 +212,7 @@
 
 @font-face {
     font-family: 'octicons';
-    src: url("octicons.eot") format("embedded-opentype"), url("octicons.woff") format("woff"), url("octicons.ttf") format("truetype"), url("octicons.svg") format("svg");
+    src: url("../octicons.eot#webfont") format("embedded-opentype"), url("../assets/octicons.woff#webfont") format("woff"), url("../assets/octicons.ttf#webfont") format("truetype"), url("../octicons.svg#webfont") format("svg");
     font-weight: normal;
     font-style: normal
 }
