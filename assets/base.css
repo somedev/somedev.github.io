@@ -50,7 +50,7 @@
 /* Github Box Header - Stats */
 
 .github-box .github-box-header .github-stats {
-	line-height: 36px;
+	line-height: 40px;
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -61,6 +61,7 @@
 	font-weight: bold;
 	line-height: 21px;
 	height: 21px;
+	width: 92px;
 }
 
 .github-box .github-box-header .github-stats a {
@@ -68,33 +69,48 @@
 	height: 21px;
 	color: #666;
 	padding: 0 5px 0 5px;
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);*/
 	opacity: 0.7;
 	vertical-align: top;
 }
 
 .github-box .github-box-header .github-stats a:hover {
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	/*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);*/
 	opacity: 1;
 }
 
-.github-box .github-box-header .github-stats a:before {
-	font-family: 'EntypoRegular';
-	content: attr(data-icon);
+.github-box .github-box-header .github-stats a:before  {
+	font-family: 'octicons';
 	display: inline-block;
 	speak: none;
 	padding-right: 2px;
-	font-size: 2em;
+	font-size: 1.3em;
+}
+
+.github-box .github-box-header .github-stats a.repo-stars:before  {
+	content: '\f02a';
+}
+
+.github-box .github-box-header .github-stats a.repo-forks:before  {
+		content: '\f020';
+}
+
+.github-box .github-box-header .github-stats a.repo-issues:before  {
+	content: '\f026';
 }
 
 .github-box .github-box-header .github-stats .repo-stars {
-	border-right: 1px solid #ddd;
+	border-right: 2px solid #ddd;
 }
 
 .github-box .github-box-header .github-stats .repo-forks {
-	padding-left: 2px;
-	border-right: 1px solid #ddd;
+	border-right: 2px solid #ddd;
 }
+
+/*.github-box .github-box-header .github-stats .repo-issues {
+	border-right: 2px solid #ddd;
+}*/
+
 
 /* Github Box Content */
 
@@ -160,7 +176,7 @@
 	padding: 0;
 	background: -webkit-linear-gradient(whiteSmoke, #E5E5E5);
 	background: -moz-linear-gradient(#f1f7fa, #dbeaf1);
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/*filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);*/
 	opacity: 1;
 }
 
@@ -168,18 +184,18 @@
 	color: #527894;
 	border-color: #cfe3ed;
 	border-bottom-color: #9fc7db;
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	/*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);*/
 	opacity: 1;
 }
 
 .github-box .github-box-download .repo-download:before {
-	font-family: 'EntypoRegular';
+	font-family: 'octicons';
 	text-indent: 0px;
-	content: attr(data-icon);
+	content: '\f0dc';
 	display: inline-block;
 	speak: none;
-	font-size: 2.0em;
-	padding: 0 6px;
+	font-size: 1.1em;
+	padding: 0 5px;
 }
 
 /* Breakpoint content-driven */
@@ -195,12 +211,8 @@
 /* Fonts */
 
 @font-face {
-	font-family: 'EntypoRegular';
-	src: url('Entypo-webfont.eot');
-	src: url('Entypo-webfont.eot?#iefix') format('embedded-opentype'),
-		url('Entypo-webfont.woff') format('woff'),
-		url('Entypo-webfont.ttf') format('truetype'),
-		url('Entypo-webfont.svg#EntypoRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'octicons';
+    src: url("octicons.eot") format("embedded-opentype"), url("octicons.woff") format("woff"), url("octicons.ttf") format("truetype"), url("octicons.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
 }
