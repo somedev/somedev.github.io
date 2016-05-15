@@ -1,97 +1,97 @@
 <!doctype html>
 <html>
-  <head>
-    <script type="text/javascript">
-    var host = "somedev.info";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>somedev.info by somedev</title>
+    <head>
+        <script type="text/javascript">
+            var host = "somedev.info";
+            if ((host == window.location.host) && (window.location.protocol != "https:"))
+                window.location.protocol = "https";
+        </script>
+        <script>
+            var trackOutboundLink = function(url) {
+              ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = url;}
+              });
+            }
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>somedev.info by somedev</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="assets/icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="canonical" href="https://somedev.info">
+        <link rel="stylesheet" href="stylesheets/github-light.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <img class="roundrectImage" width="200px" src="https://avatars0.githubusercontent.com/u/425339?s=400">
+                <h1>somedev</h1>
+                <p>Eduard Panasiuk</p>
+                <p class="view"><a href="https://github.com/somedev" onclick="trackOutboundLink('https://github.com/somedev'); return false;">GitHub</a></p>
+                <p class="view"><a href="https://twitter.com/edpanasiuk" onclick="trackOutboundLink('https://twitter.com/edpanasiuk'); return false;">Twitter</a></p>
+                <p class="view"><a href="https://www.linkedin.com/in/eduard-panasiuk-82334964" onclick="trackOutboundLink('https://www.linkedin.com/in/eduard-panasiuk-82334964'); return false;">LinkedIN</a></p>
+                <p class="view"><a href="https://somedev.info/assets/cv.pdf" onclick="trackOutboundLink('https://somedev.info/assets/cv.pdf'); return false;">CV</a></p>
+            </header>
+            <section>
+                <h3>
+                    <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>About
+                </h3>
+                <p>Hi everybody, I'm Ed. <br/> I'm an iOS developer (at  <a href="http://intellectsoft.net" onclick="trackOutboundLink('http://intellectsoft.net'); return false;">Intellectsoft</a>)</p>
+                <p>List of my Github repos:</p>
+                <div class="projects">
+                    <div class="repo" data-repo="somedev/animations-in-ios"></div>
+                    <div class="repo" data-repo="somedev/intellect-t9"></div>
+                    <div class="repo" data-repo="somedev/EPSlideMenuViewController"></div>
+                    <div class="repo" data-repo="somedev/EPRotaryKnobControl"></div>
+                    <div class="repo" data-repo="somedev/MyDiary"></div>
+                    <div class="repo" data-repo="somedev/KiwiSample"></div>
+                </div>
+            </section>
+            <footer>
+                <p><small><a href="https://somedev.info">somedev.info</a></small></p>
+            </footer>
+        </div>
+        <script src="javascripts/scale.fix.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/base.css">
+        <script src="javascripts/jquery.github.min.js"></script>
+        <script type="text/javascript">
+            $("[data-repo]").github({
+            iconStars:  true,
+            iconForks:  true,
+            iconIssues: true
+            });
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/icons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="canonical" href="https://somedev.info">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <img class="roundrectImage" width="200px" src="https://avatars0.githubusercontent.com/u/425339?s=400">
+            ga('create', 'UA-71311440-1', 'auto');
+            ga('send', 'pageview');
 
-        <h1>somedev</h1>
-        <p>Eduard Panasiuk</p>
-
-
-        <p class="view"><a href="https://github.com/somedev">GitHub</a></p>
-        <p class="view"><a href="https://twitter.com/edpanasiuk">Twitter</a></p>
-        <p class="view"><a href="https://www.linkedin.com/in/eduard-panasiuk-82334964">LinkedIN</a></p>
-
-      </header>
-      <section>
-        <h3>
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h3>
-
-<p>Hi everybody, I'm Ed. <br/> I'm an iOS developer (at  <a href="http://intellectsoft.net">Intellectsoft</a>)</p>
-<p>List of my Github repos:</p>
-
-<div class="projects">
-    <div class="repo" data-repo="somedev/animations-in-ios"></div>
-    <div class="repo" data-repo="somedev/intellect-t9"></div>
-    <div class="repo" data-repo="somedev/EPSlideMenuViewController"></div>
-    <div class="repo" data-repo="somedev/EPRotaryKnobControl"></div>
-    <div class="repo" data-repo="somedev/MyDiary"></div>
-    <div class="repo" data-repo="somedev/KiwiSample"></div>
-</div>
-
-      </section>
-
-      <footer>
-        <p><small><a href="https://somedev.info">somedev.info</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/base.css">
-    <script src="javascripts/jquery.github.min.js"></script>
-    <script type="text/javascript">
-    $("[data-repo]").github({
-    iconStars:  true,
-    iconForks:  true,
-    iconIssues: true
-  });
-    </script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71311440-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-  </body>
+        </script>
+    </body>
 </html>
