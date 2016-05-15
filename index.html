@@ -6,6 +6,15 @@
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
     </script>
+    <script>
+      var trackOutboundLink = function(url) {
+        ga('send', 'event', 'outbound', 'click', url, {
+          'transport': 'beacon',
+          'hitCallback': function(){document.location = url;}
+        });
+      }
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>somedev.info by somedev</title>
@@ -43,18 +52,17 @@
         <h1>somedev</h1>
         <p>Eduard Panasiuk</p>
 
-
-        <p class="view"><a href="https://github.com/somedev">GitHub</a></p>
-        <p class="view"><a href="https://twitter.com/edpanasiuk">Twitter</a></p>
-        <p class="view"><a href="https://www.linkedin.com/in/eduard-panasiuk-82334964">LinkedIN</a></p>
-
+        <p class="view"><a href="https://github.com/somedev" onclick="trackOutboundLink('https://github.com/somedev'); return false;">GitHub</a></p>
+        <p class="view"><a href="https://twitter.com/edpanasiuk" onclick="trackOutboundLink('https://twitter.com/edpanasiuk'); return false;">Twitter</a></p>
+        <p class="view"><a href="https://www.linkedin.com/in/eduard-panasiuk-82334964" onclick="trackOutboundLink('https://www.linkedin.com/in/eduard-panasiuk-82334964'); return false;">LinkedIN</a></p>
+        <p class="view"><a href="https://somedev.info/assets/cv.pdf" onclick="trackOutboundLink('https://somedev.info/assets/cv.pdf'); return false;">CV</a></p>
       </header>
       <section>
         <h3>
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h3>
 
-<p>Hi everybody, I'm Ed. <br/> I'm an iOS developer (at  <a href="http://intellectsoft.net">Intellectsoft</a>)</p>
+<p>Hi everybody, I'm Ed. <br/> I'm an iOS developer (at  <a href="http://intellectsoft.net" onclick="trackOutboundLink('http://intellectsoft.net'); return false;">Intellectsoft</a>)</p>
 <p>List of my Github repos:</p>
 
 <div class="projects">
